@@ -1,0 +1,15 @@
+# 2) if/else
+import random
+number = random.randint(1, 100)
+guess_count = 0
+while True:
+    guess = int(input("guess the number: "))
+    guess_count = guess_count + 1
+    if guess < number:
+        print("too low!")
+    elif guess > number:
+        print("too high!")
+    else:
+        print("correct! it took", str(guess_count), "guesses.")
+        break
+
